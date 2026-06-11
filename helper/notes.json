@@ -1,0 +1,9 @@
+{
+    "nmap": [
+        "06-09-2026-host-discovery.txt",
+        "06-09-2026-port-scanning.txt"
+    ],
+    "ai-red-teaming": [
+        "06-09-2026-mdairt101.txt"
+    ]
+}
