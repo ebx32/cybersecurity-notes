@@ -35,6 +35,33 @@ Might not want to scan machines like legacy hardware which crashes when scanned 
 
 2.2 Finding organization's IP address
 
+## Finding an organization's IP address
+
+### `dig`
+
+```
+➜  ~ dig scanme.nmap.org
+
+; <<>> DiG 9.18.49 <<>> scanme.nmap.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 34727
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;scanme.nmap.org.               IN      A
+
+;; ANSWER SECTION:
+scanme.nmap.org.        600     IN      A       45.33.32.156
+
+;; Query time: 247 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53) (UDP)
+;; WHEN: Sun Jun 28 11:07:00 IST 2026
+;; MSG SIZE  rcvd: 60
+```
+
 
 
 3. References
